@@ -8,6 +8,8 @@ def question
  		exit
  	elsif user_input == "add answers"
  		add_answers
+ 	elsif user_input == "print answers"
+ 		print_answers
  	end
 end
 
@@ -41,6 +43,11 @@ def add_answers
 		add_answers
 	end
 	@answers << user_input
+end
+
+def print_answers
+	puts @answers
+	question
 end
 
 def answer
