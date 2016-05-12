@@ -43,6 +43,7 @@ def add_answers
 		add_answers
 	end
 	@answers << user_input
+	question
 end
 
 def print_answers
