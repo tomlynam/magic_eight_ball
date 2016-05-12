@@ -36,6 +36,10 @@ end
 
 def add_answers
 	user_input = gets.strip
+	if @answers.include?(user_input) == true
+		puts "That answer already exists, gimme something else"
+		add_answers
+	end
 	@answers << user_input
 end
 
